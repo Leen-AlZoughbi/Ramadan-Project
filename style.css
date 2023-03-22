@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+/* section styling */
+::selection{
+  color: #000;
+  background: #fff;
+}
+/* navbar styling */
+*{
+  padding:0px;
+  margin:0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height:80px;
+  padding: 0 100px;
+  font-weight:bold;
+}
+
+nav ul{
+  float:right;
+  margin-right:20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height:80px;
+  margin:0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding:7px 13px;
+  border-radius:13px;
+  text-transform:uppercase;
+}
+
+.checkbtn{
+  display: none;
+}
+
+a.active, a:hover{
+  background:red;
+  transition:.5sec;
+  
+}
+
+#check{
+  display: none;
+}
+
+/* Background image styling */
+/* .img{
+
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+} */
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  z-index: 0;
+}
+
+/* Title styling */
+
+.center .title{
+  color: red;
+  font-size: 55px;
+  font-weight: 600;
+}
+/* Subttitle styling */
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+/* Buttons styling */
+.center .btns{
+  margin-top: 20px;
+
+}
+.btns{
+display:flex;
+justify-content: center;
+align-content: center;
+}
+  .center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+/*   border: none; */
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+/*   padding: 0 10px; */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+
+}
+button:hover {
+      background-color:red;
+      transition: 0.7s;
+  }
+
+
+
+
+/* responsive */
+/* tablet */
+@media (max-width:952px){
+  label.logo{
+    font-size:25px;
+    padding-left:50px;
+  }
+  nav ul li a{
+    font-size:16px;
+  }
+  .sub_title p{
+    font-size: 2px;
+  }
+    #main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  height: 800px;
+  overflow: scroll;
+   margin-right: 25px;
+}
+  .pull-quote {
+  margin: 0 auto;
+  width: 350px;
+  margin-right: 20px;
+}
+  #banner{
+  width: 70%;
+  height:50%;
+}
+.content{
+
+  top: 30px;
+  width: 20px;
+/*   margin: 0 auto; */
+}
+    .img1{
+    width: 100%;
+    height: 100vh;
+  }
+}
+/* phone */
+
+@media (max-width:852px){
+  .checkbtn{
+  display:block;
+  color:white;
+  font-size:30px;
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  cursor:pointer;
+    
+}
+
+   ul{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    background:black;
+    top:80px;
+    text-align:center;
+    left: -100%;
+    z-index:1;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+  #check:checked ~ul{
+    left: 0;
+  }
+  .sub_title p{
+    font-size:18px;
+    margin-top:140px;
+  }
+  #main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  height: 800px;
+  overflow: scroll;
+    margin-right: 25px;
+}
+.pull-quote {
+  margin: 0 auto;
+  width: 350px;
+  margin-right: 25px;
+}
+  
+#banner{
+  width: 100%;
+  height:50%;
+}
+.content{
+
+  top: 30px;
+  width: 20px;
+/*   margin: 0 auto; */
+}
+  .img1{
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (min-width:952px){
+  .sub_title p{
+
+    margin-top:180px;
+  }
+
+}

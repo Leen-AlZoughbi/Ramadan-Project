@@ -1,0 +1,53 @@
+div {
+    margin: 10em 30em;
+    width: 40em;
+    max-height: 20em;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    background-color: white;
+  }
+  
+  blockquote {
+    margin: 2em!important;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    border-left: none!important;
+  }
+  
+  blockquote:before {
+    content: open-quote;
+    font-size: 6em;
+    line-height: 0em;
+    vertical-align: -0.5em;
+  }
+  
+  blockquote p {
+    display: inline;
+    font-size: 125%;
+  }
+  
+  footer {
+    margin-left: 20em;
+  }
+  
+  button {
+    margin-top: 2em!important;
+    margin-bottom: 1em!important;
+  }
+  
+  .btn-twitter {
+    float: left;
+    margin-right: 0.5em;
+  }
+  
+  .btn-facebook {
+    float: left;
+  }
+  
+  .btn-default {
+    margin-left: 18em;
+    color: white!important;
+  }
+  
+  i {
+    color: white;
+  }
