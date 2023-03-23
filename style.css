@@ -66,28 +66,11 @@ a.active, a:hover{
   display: none;
 }
 
-/* Background image styling */
-/* .img{
 
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
-.img::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-} */
+
 .center{
   position: absolute;
-  top: 52%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -96,13 +79,7 @@ a.active, a:hover{
   z-index: 0;
 }
 
-/* Title styling */
 
-.center .title{
-  color: red;
-  font-size: 55px;
-  font-weight: 600;
-}
 /* Subttitle styling */
 .center .sub_title{
   color: #fff;
@@ -119,16 +96,16 @@ display:flex;
 justify-content: center;
 align-content: center;
 }
-  .center .btns button{
+ .btns button{
   height: 55px;
   width: 170px;
   border-radius: 5px;
-/*   border: none; */
+
   margin: 0 10px;
   border: 2px solid white;
   font-size: 20px;
   font-weight: 500;
-/*   padding: 0 10px; */
+
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
@@ -257,10 +234,7 @@ button:hover {
   width: 20px;
 /*   margin: 0 auto; */
 }
-  .img1{
-    width: 100%;
-    height: 100vh;
-  }
+
 }
 
 @media (min-width:952px){

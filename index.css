@@ -305,38 +305,3 @@ html {
     top: -5px;
   }
   
-  #last-triangle:after {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 3;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    top: 5px;
-    width: 190px;
-    height: 0;
-    border-left: 15px transparent solid;
-    border-right: 15px transparent solid;
-    border-bottom: 15px #40315a solid;
-  }
-  /* Background image styling */
-  .img{
-   background: url('flag.png') no-repeat;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .img::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-  }
